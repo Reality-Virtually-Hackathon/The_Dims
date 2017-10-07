@@ -622,7 +622,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActiveIcon: 0
   Row: 0
-  SelectionMaterials: []
+  SelectionMaterials:
+  - {fileID: 2100000, guid: 7f9cb0179745d1443aea38e67ec93ca9, type: 2}
+  - {fileID: 2100000, guid: b4689fbcf346cf445a4f16dc14061ad6, type: 2}
   RowObject: {fileID: 48447215}
 --- !u!1 &131152886
 GameObject:
@@ -1556,7 +1558,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActiveIcon: 0
   Row: 1
-  SelectionMaterials: []
+  SelectionMaterials:
+  - {fileID: 2100000, guid: 7f9cb0179745d1443aea38e67ec93ca9, type: 2}
+  - {fileID: 2100000, guid: b4689fbcf346cf445a4f16dc14061ad6, type: 2}
   RowObject: {fileID: 392671726}
 --- !u!114 &392671732
 MonoBehaviour:
@@ -2133,6 +2137,7 @@ GameObject:
   - component: {fileID: 545637310}
   - component: {fileID: 545637313}
   - component: {fileID: 545637312}
+  - component: {fileID: 545637314}
   m_Layer: 0
   m_Name: tvbtnplayBtnBg
   m_TagString: Untagged
@@ -2227,6 +2232,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.019627115, y: 0.0009618967, z: 0.01962712}
   m_Center: {x: 0.0000201622, y: 0.000087999964, z: -0.0098116845}
+--- !u!114 &545637314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 545637308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9382e9584c217604a9c518bcf97a7eb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &571044470
 GameObject:
   m_ObjectHideFlags: 0
@@ -2240,6 +2256,7 @@ GameObject:
   - component: {fileID: 571044474}
   - component: {fileID: 571044476}
   - component: {fileID: 571044475}
+  - component: {fileID: 571044477}
   m_Layer: 0
   m_Name: screenMesh
   m_TagString: Untagged
@@ -2364,6 +2381,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02000001, y: 0.0023421985, z: 0.020000005}
   m_Center: {x: 2.3283064e-10, y: 0.008828893, z: -0.0000000013400095}
+--- !u!114 &571044477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 571044470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126c2b135a0dbc34eb387a828bb45e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &594949631
 GameObject:
   m_ObjectHideFlags: 0
@@ -2776,6 +2804,7 @@ GameObject:
   - component: {fileID: 685008585}
   - component: {fileID: 685008587}
   - component: {fileID: 685008588}
+  - component: {fileID: 685008589}
   m_Layer: 0
   m_Name: side_football_btn
   m_TagString: Untagged
@@ -2868,6 +2897,17 @@ MonoBehaviour:
   LerpStabilizationPlanePowerCloser: 4
   LerpStabilizationPlanePowerFarther: 7
   UseBuiltInGazeStabilization: 1
+--- !u!114 &685008589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685008583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a76a699baa42f934195d8c4ec50f762c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &716890356
 GameObject:
   m_ObjectHideFlags: 0
@@ -3403,6 +3443,7 @@ GameObject:
   - component: {fileID: 907634567}
   - component: {fileID: 907634569}
   - component: {fileID: 907634570}
+  - component: {fileID: 907634571}
   m_Layer: 0
   m_Name: side_settings_btn
   m_TagString: Untagged
@@ -3495,6 +3536,17 @@ MonoBehaviour:
   LerpStabilizationPlanePowerCloser: 4
   LerpStabilizationPlanePowerFarther: 7
   UseBuiltInGazeStabilization: 1
+--- !u!114 &907634571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 907634565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08bea81d1c478da4a96999db42516383, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &940832267
 GameObject:
   m_ObjectHideFlags: 0
@@ -3507,6 +3559,7 @@ GameObject:
   - component: {fileID: 940832269}
   - component: {fileID: 940832271}
   - component: {fileID: 940832272}
+  - component: {fileID: 940832273}
   m_Layer: 0
   m_Name: side_page_right_btn
   m_TagString: Untagged
@@ -3599,6 +3652,17 @@ MonoBehaviour:
   LerpStabilizationPlanePowerCloser: 4
   LerpStabilizationPlanePowerFarther: 7
   UseBuiltInGazeStabilization: 1
+--- !u!114 &940832273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 940832267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c7475fb5e45d04eac239d40b2de6b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &952025448
 GameObject:
   m_ObjectHideFlags: 0
@@ -3902,6 +3966,7 @@ GameObject:
   - component: {fileID: 977737694}
   - component: {fileID: 977737696}
   - component: {fileID: 977737697}
+  - component: {fileID: 977737698}
   m_Layer: 0
   m_Name: side_page_left_btn
   m_TagString: Untagged
@@ -3994,6 +4059,17 @@ MonoBehaviour:
   LerpStabilizationPlanePowerCloser: 4
   LerpStabilizationPlanePowerFarther: 7
   UseBuiltInGazeStabilization: 1
+--- !u!114 &977737698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 977737692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c7475fb5e45d04eac239d40b2de6b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1030806706
 GameObject:
   m_ObjectHideFlags: 0
@@ -5596,6 +5672,7 @@ GameObject:
   - component: {fileID: 1449738393}
   - component: {fileID: 1449738396}
   - component: {fileID: 1449738395}
+  - component: {fileID: 1449738397}
   m_Layer: 0
   m_Name: tvbtnFwdBg
   m_TagString: Untagged
@@ -5689,6 +5766,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.020000003, z: 0.0014561617}
   m_Center: {x: 0.0008251779, y: -0.009918993, z: 0.000017652521}
+--- !u!114 &1449738397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1449738391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9382e9584c217604a9c518bcf97a7eb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1475621239
 GameObject:
   m_ObjectHideFlags: 0
@@ -6739,6 +6827,7 @@ GameObject:
   - component: {fileID: 1760772092}
   - component: {fileID: 1760772095}
   - component: {fileID: 1760772094}
+  - component: {fileID: 1760772096}
   m_Layer: 0
   m_Name: tvbtnmuteBg
   m_TagString: Untagged
@@ -6832,6 +6921,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.020000003, z: 0.0014561617}
   m_Center: {x: 0.000825176, y: -0.009918993, z: 0.000017652521}
+--- !u!114 &1760772096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1760772090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9382e9584c217604a9c518bcf97a7eb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1796213066
 GameObject:
   m_ObjectHideFlags: 0
@@ -8289,7 +8389,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActiveIcon: 0
   Row: 2
-  SelectionMaterials: []
+  SelectionMaterials:
+  - {fileID: 2100000, guid: 7f9cb0179745d1443aea38e67ec93ca9, type: 2}
+  - {fileID: 2100000, guid: b4689fbcf346cf445a4f16dc14061ad6, type: 2}
   RowObject: {fileID: 2101227469}
 --- !u!114 &2101227475
 MonoBehaviour:

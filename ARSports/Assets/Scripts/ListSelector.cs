@@ -9,7 +9,6 @@ public class ListSelector : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
         ListContainer.SetActive(false);
     }
 
@@ -18,7 +17,13 @@ public class ListSelector : MonoBehaviour
         ListContainer.SetActive(!ListContainer.activeSelf);
     }
 
-    void OnGazeEnter() { }
+    void OnGazeEnter()
+    {
+    }
+
+    void OnGazeExit()
+    {
+    }
 
     void OnMouseDown()
     {

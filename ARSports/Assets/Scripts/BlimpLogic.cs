@@ -21,6 +21,16 @@ public class BlimpLogic : MonoBehaviour
 
     }
 
+    void OnGazeEnter()
+    {
+
+    }
+
+    void OnGazeExit()
+    {
+
+    }
+
     void OnSelect()
     {
         // If the sphere has no Rigidbody component, add one to enable physics.

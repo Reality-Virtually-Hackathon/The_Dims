@@ -17,19 +17,32 @@ public class RowSelection : MonoBehaviour
         isActiveIcon = false;
     }
 
+    void OnGazeEnter()
+    {
+        OnRowSelection();
+    }
+
+    void OnGazeExit()
+    {
+        GameLogic.Instance.ResetRows();
+    }
+
     // Called by GazeGestureManager when the user performs a Select gesture
     void OnSelect()
     {
         // If the sphere has no Rigidbody component, add one to enable physics.
         if (!this.GetComponent<Rigidbody>())
         {
-            GameLogic.Instance.ResetRows();
-            isActiveIcon = true;
-            GameLogic.Instance.SelectRow(Row);
+            OnRowSelection();
         }
     }
 
     void OnMouseDown()
+    {
+        OnRowSelection();
+    }
+
+    void OnRowSelection()
     {
         GameLogic.Instance.ResetRows();
         isActiveIcon = true;
