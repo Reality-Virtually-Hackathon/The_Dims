@@ -1,16 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
-public class ListSelector : MonoBehaviour {
+public class ListSelector : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public GameObject ListContainer;
+
+    // Use this for initialization
+    void Start()
+    {
+
+        ListContainer.SetActive(false);
+    }
+
+    void OnSelect()
+    {
+        ListContainer.SetActive(!ListContainer.activeSelf);
+    }
+
+    void OnGazeEnter() { }
+
+    void OnMouseDown()
+    {
+        ListContainer.SetActive(!ListContainer.activeSelf);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }
