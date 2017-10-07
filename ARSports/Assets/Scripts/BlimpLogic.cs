@@ -26,11 +26,16 @@ public class BlimpLogic : MonoBehaviour
         // If the sphere has no Rigidbody component, add one to enable physics.
         if (!this.GetComponent<Rigidbody>())
         {
-            // same as on mouse down
+            SwitchBlimpMaterial();
         }
     }
 
     void OnMouseDown()
+    {
+        SwitchBlimpMaterial();
+    }
+
+    void SwitchBlimpMaterial()
     {
         this.isDefaultApplied = !this.isDefaultApplied;
         blimpObject.GetComponent<Renderer>().sharedMaterial = blimpMaterials[(this.isDefaultApplied ? 0 : 1)];

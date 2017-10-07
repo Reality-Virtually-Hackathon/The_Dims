@@ -19,6 +19,17 @@ public class FoodOptionsSelection : MonoBehaviour
 
     }
 
+    void OnGazeEnter()
+    {
+        FoodOptions.Instance.HideSelections();
+        this.SelectionSquare.SetActive(true);
+    }
+
+    void OnGazeExit()
+    {
+        FoodOptions.Instance.HideSelections();
+    }
+
     void OnMouseEnter()
     {
         FoodOptions.Instance.HideSelections();

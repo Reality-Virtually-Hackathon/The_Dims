@@ -151,11 +151,11 @@ namespace HoloToolkit.Unity
             {
                 if (oldFocusedObject != null)
                 {
-                    //oldFocusedObject.SendMessage("OnGazeExit", SendMessageOptions.RequireReceiver);
+                    oldFocusedObject.SendMessageUpwards("OnGazeExit", SendMessageOptions.RequireReceiver);
                 }
                 if (FocusedObject != null)
                 {
-                    //FocusedObject.SendMessage("OnGazeEnter", SendMessageOptions.RequireReceiver);
+                    FocusedObject.SendMessageUpwards("OnGazeEnter", SendMessageOptions.RequireReceiver);
                 }
             }
         }
