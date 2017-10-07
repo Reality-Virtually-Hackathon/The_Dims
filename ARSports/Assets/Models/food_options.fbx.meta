@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: a538373e2220d494098f446a15df8d9b
+timeCreated: 1507394934
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: burgerking_cube
+    100002: dominos_cube
+    100004: eat24_cube
+    100006: //RootNode
+    100008: food_selection
+    100010: Hemi
+    100012: kfc_cube
+    100014: Lamp
+    100016: mcd_cube
+    100018: pizzahut_cube
+    100020: subway_cube
+    100022: tacobell_cube
+    100024: wendys_cube
+    400000: burgerking_cube
+    400002: dominos_cube
+    400004: eat24_cube
+    400006: //RootNode
+    400008: food_selection
+    400010: Hemi
+    400012: kfc_cube
+    400014: Lamp
+    400016: mcd_cube
+    400018: pizzahut_cube
+    400020: subway_cube
+    400022: tacobell_cube
+    400024: wendys_cube
+    2300000: burgerking_cube
+    2300002: dominos_cube
+    2300004: eat24_cube
+    2300006: food_selection
+    2300008: kfc_cube
+    2300010: mcd_cube
+    2300012: pizzahut_cube
+    2300014: subway_cube
+    2300016: tacobell_cube
+    2300018: wendys_cube
+    3300000: burgerking_cube
+    3300002: dominos_cube
+    3300004: eat24_cube
+    3300006: food_selection
+    3300008: kfc_cube
+    3300010: mcd_cube
+    3300012: pizzahut_cube
+    3300014: subway_cube
+    3300016: tacobell_cube
+    3300018: wendys_cube
+    4300000: pizzahut_cube
+    4300002: tacobell_cube
+    4300004: dominos_cube
+    4300006: eat24_cube
+    4300008: wendys_cube
+    4300010: kfc_cube
+    4300012: mcd_cube
+    4300014: subway_cube
+    4300016: burgerking_cube
+    4300018: food_selection
+    10800000: Hemi
+    10800002: Lamp
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
