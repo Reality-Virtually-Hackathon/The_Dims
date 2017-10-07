@@ -81,7 +81,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BlimpLogic.cs" />
+    <Compile Include="Assets\Scripts\FoodOptions.cs" />
+    <Compile Include="Assets\Scripts\FoodOptionsSelection.cs" />
     <Compile Include="Assets\Scripts\GameLogic.cs" />
+    <Compile Include="Assets\Scripts\GazeGestureManager.cs" />
+    <Compile Include="Assets\Scripts\ListSelector.cs" />
+    <Compile Include="Assets\Scripts\NavigationSelector.cs" />
+    <Compile Include="Assets\Scripts\RotateBlimp.cs" />
+    <Compile Include="Assets\Scripts\RowSelection.cs" />
+    <Compile Include="Assets\Scripts\ScreenBtnLogic.cs" />
+    <Compile Include="Assets\Scripts\ScreenLogic.cs" />
+    <Compile Include="Assets\Scripts\SphereCommands.cs" />
+    <Compile Include="Assets\Scripts\WorldCursor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Models\3dTextShader.shader" />
