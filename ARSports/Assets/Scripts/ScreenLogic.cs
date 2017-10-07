@@ -7,7 +7,8 @@ public class ScreenLogic : MonoBehaviour
 {
 
     public VideoPlayer mainScreenPlayer;
-    public GameObject muteSlash;
+    public GameObject mute;
+    public GameObject unmute;
     public GameObject playSymbol;
     public GameObject pauseSymbol;
 
@@ -21,7 +22,8 @@ public class ScreenLogic : MonoBehaviour
 
         Instance = this;
         pauseSymbol.SetActive(false);
-        muteSlash.SetActive(false);
+        mute.SetActive(false);
+        unmute.SetActive(true);
     }
 
     // Update is called once per frame
@@ -32,7 +34,6 @@ public class ScreenLogic : MonoBehaviour
 
     public void TogglePlayVideo()
     {
-
         if (mainScreenPlayer.isPlaying)
         {
             mainScreenPlayer.Pause();
@@ -49,21 +50,29 @@ public class ScreenLogic : MonoBehaviour
 
     public void ForwardVideo()
     {
+        Debug.Log("forward");
         mainScreenPlayer.StepForward();
         mainScreenPlayer.Play();
     }
 
     public void ToggleMuteVideo()
     {
-        if (mainScreenPlayer.GetDirectAudioMute(0))
+        isPlaying = !isPlaying;
+
+        if (isPlaying)
         {
+
             mainScreenPlayer.SetDirectAudioMute(0, false);
-            muteSlash.SetActive(false);
+            mute.SetActive(false);
+            unmute.SetActive(true);
+            Debug.Log("true");
         }
         else
         {
             mainScreenPlayer.SetDirectAudioMute(0, true);
-            muteSlash.SetActive(true);
+            mute.SetActive(true);
+            unmute.SetActive(false);
+            Debug.Log("false");
         }
     }
 }

@@ -129,11 +129,11 @@ public class GameLogic : MonoBehaviour {
 
         allMatches = new List<GameMatch>
         {
-            new GameMatch { HomeTeam = new Team { alias = "GBY", points = "10" }, GuestTeam = new Team { alias = "MIA", points = "28" } },
-            new GameMatch { HomeTeam = new Team { alias = "SFO", points = "15" }, GuestTeam = new Team { alias = "DEN", points = "18" } },
-            new GameMatch { HomeTeam = new Team { alias = "ATL", points = "14" }, GuestTeam = new Team { alias = "NWE", points = "0" } } ,
-            new GameMatch { HomeTeam = new Team { alias = "NYG", points = "16" }, GuestTeam = new Team { alias = "NYJ", points = "32" } },
-            new GameMatch { HomeTeam = new Team { alias = "MIN", points = "45" }, GuestTeam = new Team { alias = "NWE", points = "20" } }
+            new GameMatch { HomeTeam = new Team { alias = "MIA", points = "28" }, GuestTeam = new Team { alias = "GBY", points = "10" } },
+            new GameMatch { HomeTeam = new Team { alias = "DEN", points = "18" }, GuestTeam = new Team { alias = "SFO", points = "15" } },
+            new GameMatch { HomeTeam = new Team { alias = "NWE", points = "0" }, GuestTeam = new Team { alias = "ATL", points = "14" } } ,
+            new GameMatch { HomeTeam = new Team { alias = "NYJ", points = "32" }, GuestTeam = new Team { alias = "NYG", points = "16" } },
+            new GameMatch { HomeTeam = new Team { alias = "NWE", points = "20" }, GuestTeam = new Team { alias = "MIN", points = "45" } }
         };
     }
 

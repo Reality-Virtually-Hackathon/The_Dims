@@ -24,11 +24,16 @@ public class ScreenBtnLogic : MonoBehaviour
         // If the sphere has no Rigidbody component, add one to enable physics.
         if (!this.GetComponent<Rigidbody>())
         {
-            // same as on mouse down
+            OnScreenBtnClick();
         }
     }
 
     void OnMouseDown()
+    {
+        OnScreenBtnClick();
+    }
+
+    void OnScreenBtnClick()
     {
         switch (this.BtnTag)
         {

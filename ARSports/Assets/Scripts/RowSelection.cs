@@ -19,12 +19,12 @@ public class RowSelection : MonoBehaviour
 
     void OnGazeEnter()
     {
-        OnRowSelection();
+       // OnRowSelection();
     }
 
     void OnGazeExit()
     {
-        GameLogic.Instance.ResetRows();
+       // GameLogic.Instance.ResetRows();
     }
 
     // Called by GazeGestureManager when the user performs a Select gesture
