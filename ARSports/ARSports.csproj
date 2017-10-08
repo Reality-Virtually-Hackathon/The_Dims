@@ -173,6 +173,7 @@
     <Compile Include="Assets\Scripts\ListSelector.cs" />
     <Compile Include="Assets\Scripts\ListSettingsSelector.cs" />
     <Compile Include="Assets\Scripts\NavigationSelector.cs" />
+    <Compile Include="Assets\Scripts\RecognitionScript.cs" />
     <Compile Include="Assets\Scripts\RotateBlimp.cs" />
     <Compile Include="Assets\Scripts\RowSelection.cs" />
     <Compile Include="Assets\Scripts\ScreenBtnLogic.cs" />

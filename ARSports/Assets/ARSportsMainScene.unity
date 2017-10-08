@@ -7415,6 +7415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1671208416}
   - component: {fileID: 1671208417}
+  - component: {fileID: 1671208418}
   m_Layer: 0
   m_Name: GameLogic
   m_TagString: Untagged
@@ -7475,6 +7476,7 @@ MonoBehaviour:
   - {fileID: 1672618012}
   - {fileID: 1001154647}
   - {fileID: 1142387004}
+  playerPrefabs: []
   homeTeamNameLabel: {fileID: 1850286335}
   guestTeamNameLabel: {fileID: 1693916937}
   homeTeamScoreLabel: {fileID: 1138234537}
@@ -7545,6 +7547,18 @@ MonoBehaviour:
   - {fileID: 32900000, guid: ed72e42fe04b05d44a04097ecb388fe1, type: 3}
   - {fileID: 32900000, guid: 979c4d06ab26fe14da2f931e2571b149, type: 3}
   mainScreenPlayer: {fileID: 571044474}
+--- !u!114 &1671208418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1671208415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699e9f267c4b40240871b1a92eaa3e76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodMenu: {fileID: 180354156}
 --- !u!1 &1672618012
 GameObject:
   m_ObjectHideFlags: 0
