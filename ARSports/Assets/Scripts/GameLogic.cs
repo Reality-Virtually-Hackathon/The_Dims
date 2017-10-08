@@ -16,6 +16,8 @@ public class GameLogic : MonoBehaviour {
     public GameObject leftHelmetFastener;
     public GameObject rightHelmetFastener;
 
+    public GameObject[] playerPositions;
+
     public GameObject homeTeamNameLabel;
     public GameObject guestTeamNameLabel;
     public GameObject homeTeamScoreLabel;
@@ -125,7 +127,7 @@ public class GameLogic : MonoBehaviour {
 
         for (int i = 0; i < allTeamsAliases.Count; i++)
         {
-            allTeams.Add(allTeamsAliases[i], new TeamMetadata(i, helmets, helmetFaces, helmetFasteners, teamBanners, scoreboardTeamLogos));
+            allTeams.Add(allTeamsAliases[i], new TeamMetadata(i, helmets, helmetFaces, helmetFasteners, teamBanners, scoreboardTeamLogos, teamJerseys));
         }
 
         allMatches = new List<GameMatch>
@@ -196,6 +198,14 @@ public class GameLogic : MonoBehaviour {
         guestTeamScoreboardLogo.GetComponent<Renderer>().sharedMaterial = guestTeamMetadata.scoreboardLogo;
 
 		mainScreenPlayer.clip = superBowlClips [rowNum];
+
+        //homeJersey.GetComponent<FootballJerseyLogic>().frontNumber.GetComponent<TextMesh>().text = "50";
+        //homeJersey.GetComponent<FootballJerseyLogic>().backNumber.GetComponent<TextMesh>().text = "50";
+        //homeJersey.GetComponent<FootballJerseyLogic>().jersey.GetComponent<Renderer>().sharedMaterial = homeTeamMetadata.jersey;
+
+        //guestJersey.GetComponent<FootballJerseyLogic>().frontNumber.GetComponent<TextMesh>().text = "25";
+        //guestJersey.GetComponent<FootballJerseyLogic>().backNumber.GetComponent<TextMesh>().text = "25";
+        //guestJersey.GetComponent<FootballJerseyLogic>().jersey.GetComponent<Renderer>().sharedMaterial = guestTeamMetadata.jersey;
     }
 
     //Payload ProcessJSON(string jsonString)
@@ -259,14 +269,16 @@ public class GameLogic : MonoBehaviour {
         public Material fasteners;
         public Material teamBanner;
         public Material scoreboardLogo;
+        public Material jersey;
 
-        public TeamMetadata(int index, Material[] helmets, Material[] helmetFaces, Material[] helmetFasteners, Material[] teamBanners, Material[] scoreboardTeamLogos)
+        public TeamMetadata(int index, Material[] helmets, Material[] helmetFaces, Material[] helmetFasteners, Material[] teamBanners, Material[] scoreboardTeamLogos, Material[] jerseys)
         {
             helmet = helmets[index];
             helmetRail = helmetFaces[index];
             fasteners = helmetFasteners[index];
             teamBanner = teamBanners[index];
             scoreboardLogo = scoreboardTeamLogos[index];
+            jersey = jerseys[index];
         }
     }
 
