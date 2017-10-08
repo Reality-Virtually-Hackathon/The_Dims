@@ -106,7 +106,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 7b848b7feaa524953d09fc1851efa6da UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 7b848b7feaa524953d09fc1851efa6da UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 c24a21b131bfa67be1162db2cba4b52b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-97a9512e9a9cf21ca3c54b87bfa3b038 Assembly-CSharp.dll:.GameLogic
+b3d35d5ae9e1ecbcf965521fdb104b4f Assembly-CSharp.dll:.GameLogic
 e611f0bfab75b2af0aa9edf1eeb6314c Assembly-CSharp.dll:HoloToolkit.Unity.Interpolator
 8282e7952e1225016ba235061a4ab851 Assembly-CSharp.dll:HoloToolkit.Unity.KeywordManager
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -137,7 +137,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 cdeb02b400afb7c46046b99d63d2e7df Assembly-CSharp.dll:HoloToolkit.Unity.FpsDisplay
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RotateBlimp
 eaffdd8c50bb267399faf10f8eeff67b Assembly-CSharp.dll:HoloToolkit.Unity.UAudioMiniManager
-144c65d50719f352656a275aea1af60d Assembly-CSharp.dll:.RecognitionScript
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RecognitionScript
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.AudioSourcesReference
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.HandsManager
 5d3fa00038c35fc29286a2283c761e27 Assembly-CSharp.dll:.NavigationSelector
