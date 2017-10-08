@@ -169,6 +169,7 @@
     <Compile Include="Assets\Scripts\FootballScript.cs" />
     <Compile Include="Assets\Scripts\GameLogic.cs" />
     <Compile Include="Assets\Scripts\GazeGestureManager.cs" />
+    <Compile Include="Assets\Scripts\ListFoodSelection.cs" />
     <Compile Include="Assets\Scripts\ListGameSelector.cs" />
     <Compile Include="Assets\Scripts\ListPaginationSelector.cs" />
     <Compile Include="Assets\Scripts\ListSelector.cs" />

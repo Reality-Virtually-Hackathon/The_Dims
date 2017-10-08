@@ -2,18 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ListSettingsSelector : MonoBehaviour {
+public class ListFoodSelection : MonoBehaviour {
 
-    public GameObject tvRef;
+    public GameObject foodOptions;
+
 	// Use this for initialization
 	void Start () {
-        tvRef.SetActive(false);
-	}
+        foodOptions.SetActive(false);
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
+
+    void OnSelect()
+    {
+        foodOptions.SetActive(!foodOptions.activeSelf);
+    }
 
     void OnGazeEnter()
     {
@@ -23,14 +29,8 @@ public class ListSettingsSelector : MonoBehaviour {
     {
     }
 
-    void OnSelect()
-    {
-        tvRef.SetActive(!tvRef.activeSelf);
-    }
-
     void OnMouseDown()
     {
-        tvRef.SetActive(!tvRef.activeSelf);
-        Debug.Log("i'm clicking");
+        foodOptions.SetActive(!foodOptions.activeSelf);
     }
 }
