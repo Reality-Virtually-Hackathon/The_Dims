@@ -208,3 +208,5 @@ db67dce076448c115fd49ba644e3391f Assembly-CSharp.dll:.FoodOptionsSelection
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ListPaginationSelector
 f8a336331055a3ae9cc7b382c9b97974 Assembly-CSharp.dll:.ScaleObjectMessageReceiver
 7bf5d02e98059f5c0d3108caea9354c6 Assembly-CSharp.dll:.ScreenBtnLogic
+8a116afe7afedbd80f04b3395a9a34fc Assembly-CSharp.dll:.FootballScript
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SplashScreenScript

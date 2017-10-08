@@ -180,6 +180,7 @@
     <Compile Include="Assets\Scripts\ScreenBtnLogic.cs" />
     <Compile Include="Assets\Scripts\ScreenLogic.cs" />
     <Compile Include="Assets\Scripts\SphereCommands.cs" />
+    <Compile Include="Assets\Scripts\SplashScreenScript.cs" />
     <Compile Include="Assets\Scripts\TVScreenControlSelection.cs" />
     <Compile Include="Assets\Scripts\TVScreenScript.cs" />
     <Compile Include="Assets\Scripts\WorldCursor.cs" />
