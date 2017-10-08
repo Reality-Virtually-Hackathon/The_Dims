@@ -180,7 +180,7 @@ c1ac6462c82be12ebeffcf18f5562cce Assembly-CSharp.dll:.NearPlaneFade
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
 72ef5c33f0bdb2e621f586e2977591a6 Assembly-CSharp.dll:.RowSelection
 79b43dd87d6a06e44806ac1c41e7835e Assembly-CSharp.dll:HoloToolkit.Unity.SpatialMappingManager
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ListGameSelector
+075864b6fca7e58f3b1b4c44999afc75 Assembly-CSharp.dll:.ListGameSelector
 5f856dd07092734f22f2b747c5250aaa Assembly-CSharp.dll:.TextToSpeechManagerTest
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
@@ -209,4 +209,5 @@ db67dce076448c115fd49ba644e3391f Assembly-CSharp.dll:.FoodOptionsSelection
 f8a336331055a3ae9cc7b382c9b97974 Assembly-CSharp.dll:.ScaleObjectMessageReceiver
 7bf5d02e98059f5c0d3108caea9354c6 Assembly-CSharp.dll:.ScreenBtnLogic
 8a116afe7afedbd80f04b3395a9a34fc Assembly-CSharp.dll:.FootballScript
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SplashScreenScript
+6fea9acaf7a873178fd7fc789f3414d4 Assembly-CSharp.dll:.SplashScreenScript
+4c304978bc5a155eb881d7b0aa4e6f36 Assembly-CSharp.dll:.SpatialUnderstandingState

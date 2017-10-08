@@ -179,6 +179,7 @@
     <Compile Include="Assets\Scripts\RowSelection.cs" />
     <Compile Include="Assets\Scripts\ScreenBtnLogic.cs" />
     <Compile Include="Assets\Scripts\ScreenLogic.cs" />
+    <Compile Include="Assets\Scripts\SpatialUnderstandingState.cs" />
     <Compile Include="Assets\Scripts\SphereCommands.cs" />
     <Compile Include="Assets\Scripts\SplashScreenScript.cs" />
     <Compile Include="Assets\Scripts\TVScreenControlSelection.cs" />
