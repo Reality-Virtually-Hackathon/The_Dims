@@ -41,6 +41,7 @@ public class GameLogic : MonoBehaviour {
     public Material[] goalPostsThemes;
     public Material[] scoreboardTeamLogos;
     public Material[] selectionMaterials;
+    public Material[] teamJerseys;
 
     public Venue venue;
     public Team homeTeam;
