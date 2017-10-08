@@ -72,12 +72,14 @@ public class GameLogic : MonoBehaviour {
 
         SetupTeamMetadata();
 
+        // TODO: we will be using realtime API from SportsRadar API (https://developer.sportradar.com/) 
+        // to capture real time game data and update the football field
+        // the bottom URL should give you sample payload in JSON on how we will consume the data from their API
         //string url = "http://dumpster.drcoderz.com/sampledata.json";
         //WWW www = new WWW(url);
-       // yield return www;
+        // yield return www;
 
         //ProcessJSON(www.text);
-
 
         //Payload p = ProcessJSON(www.text);
 
@@ -104,7 +106,8 @@ public class GameLogic : MonoBehaviour {
         //UpdateScores();
     }
 
-    void ProcessJSON(string jsonString)
+    // this method will process the JSON coming from SportsRadar API (https://developer.sportradar.com/)
+    /*void ProcessJSON(string jsonString)
     {
         var dic = Json.Deserialize(jsonString) as Dictionary<string, object>;
 
@@ -119,7 +122,7 @@ public class GameLogic : MonoBehaviour {
 
         homeTeamMetadata = allTeams[homeTeam.alias];
         guestTeamMetadata = allTeams[guestTeam.alias];
-    }
+    }*/
 
     public void ShowTVScreen(bool showTV)
     {
@@ -145,6 +148,7 @@ public class GameLogic : MonoBehaviour {
     {
         allTeams = new Dictionary<string, TeamMetadata>();
 
+        // hard-coded list of football teams (this should come from the SportsRadar API from the list of games currently available on a given day)
         List<string> allTeamsAliases = new List<string>()
         {
              "GBY",
@@ -217,7 +221,7 @@ public class GameLogic : MonoBehaviour {
 
     public void BrowseGamesList(string direction)
     {
-
+        // this is for browsing  through the list of games
     }
 
     public void SelectRow(int rowNum)
@@ -263,6 +267,7 @@ public class GameLogic : MonoBehaviour {
         }
     }
 
+    // this is to process the SportsRadar API payload (in progress)
     //Payload ProcessJSON(string jsonString)
     //{
     //    Payload p = new Payload(jsonString);
@@ -967,5 +972,4 @@ public class GameLogic : MonoBehaviour {
             }
         }
     }
-
 }

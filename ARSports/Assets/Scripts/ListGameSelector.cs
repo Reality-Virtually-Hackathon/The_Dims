@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class ListGameSelector : MonoBehaviour {
 
+    public GameObject FootballFieldRef;
+
 	// Use this for initialization
 	void Start () {
-		
+        FootballFieldRef.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -24,5 +26,11 @@ public class ListGameSelector : MonoBehaviour {
 
     void OnSelect()
     {
+        FootballFieldRef.SetActive(!FootballFieldRef.activeSelf);
+    }
+
+    void OnMouseDown()
+    {
+        FootballFieldRef.SetActive(!FootballFieldRef.activeSelf);
     }
 }
