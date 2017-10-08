@@ -15,6 +15,10 @@ public class GameLogic : MonoBehaviour {
     public GameObject rightHelmetFace;
     public GameObject leftHelmetFastener;
     public GameObject rightHelmetFastener;
+    public GameObject tvScreen;
+    public GameObject foodOptions;
+    public GameObject footballField;
+    public GameObject scoreboard;
 
     public GameObject[] playerPositions;
     public List<GameObject> playerPrefabs = new List<GameObject>();
@@ -91,6 +95,11 @@ public class GameLogic : MonoBehaviour {
         blimp.GetComponent<Renderer>().sharedMaterial = blimps[0];
         mainField.GetComponent<Renderer>().sharedMaterial = fieldThemes[0];
 
+        tvScreen.SetActive(false);
+        foodOptions.SetActive(false);
+        footballField.SetActive(false);
+        scoreboard.SetActive(false);
+
         //InvokeRepeating("UpdateScores", 0, 3);
         //UpdateScores();
     }
@@ -110,6 +119,26 @@ public class GameLogic : MonoBehaviour {
 
         homeTeamMetadata = allTeams[homeTeam.alias];
         guestTeamMetadata = allTeams[guestTeam.alias];
+    }
+
+    public void ShowTVScreen(bool showTV)
+    {
+        tvScreen.SetActive(showTV);
+    }
+
+    public void ShowScoreboard(bool showScoreboard)
+    {
+        scoreboard.SetActive(showScoreboard);
+    }
+
+    public void ShowFootballField(bool showField)
+    {
+        footballField.SetActive(showField);
+    }
+
+    public void ShowFoodOptions(bool showFood)
+    {
+        foodOptions.SetActive(showFood);
     }
 
     void SetupTeamMetadata()

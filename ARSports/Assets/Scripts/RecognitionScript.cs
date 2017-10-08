@@ -6,21 +6,12 @@ using System.Linq;
 
 public class RecognitionScript : MonoBehaviour
 {
-    public GameObject foodMenu;
-
     KeywordRecognizer keywordRecognizer;
     Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
     // Use this for initialization
     void Start()
     {
-        foodMenu.SetActive(false);
-
-        keywords.Add("i am hungry", () =>
-        {
-            //HeyCalled();
-            foodMenu.SetActive(true);
-        });
-
+        MapKeywords();
         keywordRecognizer = new KeywordRecognizer(keywords.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += KeywordRecognizerOnPhraseRecognized;
         keywordRecognizer.Start();
@@ -41,5 +32,58 @@ public class RecognitionScript : MonoBehaviour
     void Update()
     {
 
+    }
+
+    void MapKeywords()
+    {
+        keywords.Add("i am hungry", () =>
+        {
+            GameLogic.Instance.ShowFoodOptions(true);
+        });
+
+        keywords.Add("hide food options", () =>
+        {
+            GameLogic.Instance.ShowFoodOptions(false);
+        });
+
+        keywords.Add("show game", () =>
+        {
+            GameLogic.Instance.ShowTVScreen(true);
+        });
+
+        keywords.Add("hide game", () =>
+        {
+            GameLogic.Instance.ShowTVScreen(false);
+        });
+
+        keywords.Add("play game", () =>
+        {
+            ScreenLogic.Instance.TogglePlayVideo();
+        });
+
+        keywords.Add("pause game", () =>
+        {
+            ScreenLogic.Instance.TogglePlayVideo();
+        });
+
+        keywords.Add("show field", () =>
+        {
+            GameLogic.Instance.ShowFootballField(true);
+        });
+
+        keywords.Add("hide field", () =>
+        {
+            GameLogic.Instance.ShowFootballField(false);
+        });
+
+        keywords.Add("show scoreboard", () =>
+        {
+            GameLogic.Instance.ShowScoreboard(true);
+        });
+
+        keywords.Add("hide scoreboard", () =>
+        {
+            GameLogic.Instance.ShowScoreboard(false);
+        });
     }
 }

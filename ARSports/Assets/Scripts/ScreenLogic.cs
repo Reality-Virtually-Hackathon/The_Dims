@@ -19,9 +19,9 @@ public class ScreenLogic : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
         Instance = this;
         pauseSymbol.SetActive(false);
+        mainScreenPlayer.Pause();
         mute.SetActive(false);
         unmute.SetActive(true);
     }

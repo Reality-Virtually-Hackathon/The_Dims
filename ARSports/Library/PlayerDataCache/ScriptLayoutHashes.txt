@@ -137,6 +137,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 cdeb02b400afb7c46046b99d63d2e7df Assembly-CSharp.dll:HoloToolkit.Unity.FpsDisplay
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RotateBlimp
 eaffdd8c50bb267399faf10f8eeff67b Assembly-CSharp.dll:HoloToolkit.Unity.UAudioMiniManager
+144c65d50719f352656a275aea1af60d Assembly-CSharp.dll:.RecognitionScript
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.AudioSourcesReference
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.HandsManager
 5d3fa00038c35fc29286a2283c761e27 Assembly-CSharp.dll:.NavigationSelector
@@ -207,4 +208,3 @@ db67dce076448c115fd49ba644e3391f Assembly-CSharp.dll:.FoodOptionsSelection
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ListPaginationSelector
 f8a336331055a3ae9cc7b382c9b97974 Assembly-CSharp.dll:.ScaleObjectMessageReceiver
 7bf5d02e98059f5c0d3108caea9354c6 Assembly-CSharp.dll:.ScreenBtnLogic
-144c65d50719f352656a275aea1af60d Assembly-CSharp.dll:.RecognitionScript
