@@ -31,6 +31,5 @@ public class ListSettingsSelector : MonoBehaviour {
     void OnMouseDown()
     {
         tvRef.SetActive(!tvRef.activeSelf);
-        Debug.Log("i'm clicking");
     }
 }

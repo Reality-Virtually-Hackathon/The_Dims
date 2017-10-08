@@ -192,7 +192,7 @@ a903474e1a4a0236cb1ab2f64bac5c63 Assembly-CSharp.dll:.SpatialProcessingTest
 6f948fa594a2388dbbb35f700f7cfc7a Assembly-CSharp.dll:.CursorManager
 27ff420e196189a39779b72f71aa8253 Assembly-CSharp.dll:HoloToolkit.Unity.GestureManager
 8644983781391a1a0c05940eaa565fef Assembly-CSharp.dll:HoloToolkit.Unity.RemoteMeshSource
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ListSettingsSelector
+531594d5e97bfed2ebf327c44b65f567 Assembly-CSharp.dll:.ListSettingsSelector
 0d9223f979c995f4d8d61c02b6121fe3 Assembly-CSharp.dll:.ScreenLogic
 20e92b7deb7ba93ac236bc35a148a5d2 Assembly-CSharp.dll:.ListSelector
 a6a54816fbb7138c3ada1573142816a8 Assembly-CSharp.dll:.FocusedObjectMessageReceiver
@@ -211,3 +211,4 @@ f8a336331055a3ae9cc7b382c9b97974 Assembly-CSharp.dll:.ScaleObjectMessageReceiver
 8a116afe7afedbd80f04b3395a9a34fc Assembly-CSharp.dll:.FootballScript
 6fea9acaf7a873178fd7fc789f3414d4 Assembly-CSharp.dll:.SplashScreenScript
 e6b22e925f81944086ecc5ecbb49c791 Assembly-CSharp.dll:.SpatialUnderstandingState
+b4c080093cd26b245fcab55c4c6aa987 Assembly-CSharp.dll:.ListFoodSelection
