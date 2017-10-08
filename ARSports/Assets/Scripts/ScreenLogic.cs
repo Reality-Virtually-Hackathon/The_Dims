@@ -20,7 +20,7 @@ public class ScreenLogic : MonoBehaviour
     void Start()
     {
         Instance = this;
-        pauseSymbol.SetActive(false);
+        playSymbol.SetActive(false);
         mainScreenPlayer.Pause();
         mute.SetActive(false);
         unmute.SetActive(true);
@@ -37,14 +37,14 @@ public class ScreenLogic : MonoBehaviour
         if (mainScreenPlayer.isPlaying)
         {
             mainScreenPlayer.Pause();
-            playSymbol.SetActive(false);
-            pauseSymbol.SetActive(true);
+            playSymbol.SetActive(true);
+            pauseSymbol.SetActive(false);
         }
         else
         {
             mainScreenPlayer.Play();
-            playSymbol.SetActive(true);
-            pauseSymbol.SetActive(false);
+            playSymbol.SetActive(false);
+            pauseSymbol.SetActive(true);
         }
     }
 

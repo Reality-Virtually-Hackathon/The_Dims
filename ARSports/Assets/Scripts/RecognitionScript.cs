@@ -41,7 +41,7 @@ public class RecognitionScript : MonoBehaviour
             GameLogic.Instance.ShowFoodOptions(true);
         });
 
-        keywords.Add("hide food options", () =>
+        keywords.Add("hide food", () =>
         {
             GameLogic.Instance.ShowFoodOptions(false);
         });
