@@ -106,7 +106,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 7b848b7feaa524953d09fc1851efa6da UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 7b848b7feaa524953d09fc1851efa6da UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 c24a21b131bfa67be1162db2cba4b52b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-804b9f3a1d76195f06d08d5547108bea Assembly-CSharp.dll:.GameLogic
+97a9512e9a9cf21ca3c54b87bfa3b038 Assembly-CSharp.dll:.GameLogic
 e611f0bfab75b2af0aa9edf1eeb6314c Assembly-CSharp.dll:HoloToolkit.Unity.Interpolator
 8282e7952e1225016ba235061a4ab851 Assembly-CSharp.dll:HoloToolkit.Unity.KeywordManager
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -143,6 +143,7 @@ eaffdd8c50bb267399faf10f8eeff67b Assembly-CSharp.dll:HoloToolkit.Unity.UAudioMin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.SpatialMappingSource
 d507612c6bfa189f536f3e261033ac64 Assembly-CSharp.dll:.ManualCameraControl
 f3585fe689e113d5dc542e3a9dbf08d0 Assembly-CSharp.dll:.PlaneFindingTest
+8febc2ecb01e96261f8311e35492bcf9 Assembly-CSharp.dll:.FootballJerseyLogic
 173ecf8cc500c312e9f70f78fdef4847 Assembly-CSharp.dll:HoloToolkit.Unity.HandGuidance
 05a62ac0d9852dc139f484dd48f033b8 Assembly-CSharp.dll:HoloToolkit.Unity.StabilizationPlaneModifier
 9c9dfbd5b94888324d2380019ff9c560 Assembly-CSharp.dll:HoloToolkit.Unity.SpatialUnderstanding
