@@ -17,6 +17,7 @@ public class GameLogic : MonoBehaviour {
     public GameObject rightHelmetFastener;
 
     public GameObject[] playerPositions;
+    public List<GameObject> playerPrefabs = new List<GameObject>();
 
     public GameObject homeTeamNameLabel;
     public GameObject guestTeamNameLabel;
@@ -138,6 +139,11 @@ public class GameLogic : MonoBehaviour {
             new GameMatch { HomeTeam = new Team { alias = "NYJ", points = "32" }, GuestTeam = new Team { alias = "NYG", points = "16" } },
             new GameMatch { HomeTeam = new Team { alias = "NWE", points = "20" }, GuestTeam = new Team { alias = "MIN", points = "45" } }
         };
+
+        homeTeamMetadata = allTeams[allMatches[0].HomeTeam.alias];
+        guestTeamMetadata = allTeams[allMatches[0].GuestTeam.alias];
+
+        RandomizePlayers();
     }
 
     public void ResetRows()
@@ -154,6 +160,25 @@ public class GameLogic : MonoBehaviour {
 
 		RowSelection list3Script = listRow3.GetComponent<RowSelection>();
 		list3Script.OnResetActiveIcon();
+    }
+
+    public void RandomizePlayers()
+    {
+        for (var i = 0; i < 22; i++)
+        {
+            GameObject currentGameObject = playerPositions[i];
+            var playerPrefab = Instantiate(Resources.Load("jerseyPrefab")) as GameObject;
+            playerPrefab.transform.parent = currentGameObject.transform;
+            playerPrefab.transform.localPosition = currentGameObject.transform.position;
+            playerPrefab.transform.rotation = Quaternion.identity;
+            playerPrefab.transform.localScale = new Vector3(1f, 1f, 1f);
+
+            playerPrefab.GetComponent<FootballJerseyLogic>().frontNumber.GetComponent<TextMesh>().text = i.ToString();
+            playerPrefab.GetComponent<FootballJerseyLogic>().backNumber.GetComponent<TextMesh>().text = i.ToString();
+            playerPrefab.GetComponent<FootballJerseyLogic>().jersey.GetComponent<Renderer>().sharedMaterial = i % 2 == 0 ? homeTeamMetadata.jersey : guestTeamMetadata.jersey;
+
+            playerPrefabs.Add(playerPrefab);
+        }
     }
 
     public void UpdateOtherTeam()
@@ -199,13 +224,14 @@ public class GameLogic : MonoBehaviour {
 
 		mainScreenPlayer.clip = superBowlClips [rowNum];
 
-        //homeJersey.GetComponent<FootballJerseyLogic>().frontNumber.GetComponent<TextMesh>().text = "50";
-        //homeJersey.GetComponent<FootballJerseyLogic>().backNumber.GetComponent<TextMesh>().text = "50";
-        //homeJersey.GetComponent<FootballJerseyLogic>().jersey.GetComponent<Renderer>().sharedMaterial = homeTeamMetadata.jersey;
+        for (var i = 0; i < 22; i++)
+        {
+            var playerPrefab = playerPrefabs[i];
 
-        //guestJersey.GetComponent<FootballJerseyLogic>().frontNumber.GetComponent<TextMesh>().text = "25";
-        //guestJersey.GetComponent<FootballJerseyLogic>().backNumber.GetComponent<TextMesh>().text = "25";
-        //guestJersey.GetComponent<FootballJerseyLogic>().jersey.GetComponent<Renderer>().sharedMaterial = guestTeamMetadata.jersey;
+            playerPrefab.GetComponent<FootballJerseyLogic>().frontNumber.GetComponent<TextMesh>().text = i.ToString();
+            playerPrefab.GetComponent<FootballJerseyLogic>().backNumber.GetComponent<TextMesh>().text = i.ToString();
+            playerPrefab.GetComponent<FootballJerseyLogic>().jersey.GetComponent<Renderer>().sharedMaterial = i % 2 == 0 ? homeTeamMetadata.jersey : guestTeamMetadata.jersey;
+        }
     }
 
     //Payload ProcessJSON(string jsonString)
