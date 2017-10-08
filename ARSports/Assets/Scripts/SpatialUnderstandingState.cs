@@ -1,14 +1,17 @@
 ﻿using System;
 using UnityEngine;
 using HoloToolkit.Unity;
-//using HoloToolkit.Unity.SpatialMapping;
+using HoloToolkit.Unity.SpatialMapping;
 
 public class SpatialUnderstandingState : Singleton<SpatialUnderstandingState>
 {
     public float MinAreaForStats = 5.0f;
+    public float MinAreaForComplete = 50.0f;
+    public float MinHorizAreaForComplete = 25.0f;
+    public float MinWallAreaForComplete = 10.0f;
 
     public TextMesh DebugDisplay;
-    //public TextMesh DebugSubDisplay;
+    public TextMesh DebugSubDisplay;
 
     private bool _triggered;
     public bool HideText = false;
@@ -24,6 +27,36 @@ public class SpatialUnderstandingState : Singleton<SpatialUnderstandingState>
         set
         {
             _spaceQueryDescription = value;
+        }
+    }
+
+    public bool DoesScanMeetMinBarForCompletion
+    {
+        get
+        {
+            // Only allow this when we are actually scanning
+            if ((SpatialUnderstanding.Instance.ScanState != SpatialUnderstanding.ScanStates.Scanning) ||
+                (!SpatialUnderstanding.Instance.AllowSpatialUnderstanding))
+            {
+                return false;
+            }
+
+            // Query the current playspace stats
+            IntPtr statsPtr = SpatialUnderstanding.Instance.UnderstandingDLL.GetStaticPlayspaceStatsPtr();
+            if (SpatialUnderstandingDll.Imports.QueryPlayspaceStats(statsPtr) == 0)
+            {
+                return false;
+            }
+            SpatialUnderstandingDll.Imports.PlayspaceStats stats = SpatialUnderstanding.Instance.UnderstandingDLL.GetStaticPlayspaceStats();
+
+            // Check our preset requirements
+            if ((stats.TotalSurfaceArea > MinAreaForComplete) ||
+                (stats.HorizSurfaceArea > MinHorizAreaForComplete) ||
+                (stats.WallSurfaceArea > MinWallAreaForComplete))
+            {
+                return true;
+            }
+            return false;
         }
     }
 
@@ -70,7 +103,17 @@ public class SpatialUnderstandingState : Singleton<SpatialUnderstandingState>
     {
         get
         {
-            return Color.white;
+            if (SpatialUnderstanding.Instance.ScanState == SpatialUnderstanding.ScanStates.Scanning)
+            {
+                return DoesScanMeetMinBarForCompletion ? Color.yellow : Color.white;
+            }
+
+            float alpha = 1.0f;
+
+            // Special case processing & 
+            return (!string.IsNullOrEmpty(SpaceQueryDescription)) ?
+                (PrimaryText.Contains("processing") ? new Color(1.0f, 0.0f, 0.0f, 1.0f) : new Color(1.0f, 0.7f, 0.1f, alpha)) :
+                new Color(1.0f, 1.0f, 1.0f, alpha);
         }
     }
 
@@ -120,7 +163,7 @@ public class SpatialUnderstandingState : Singleton<SpatialUnderstandingState>
         // Update display text
         DebugDisplay.text = PrimaryText;
         DebugDisplay.color = PrimaryColor;
-        //DebugSubDisplay.text = DetailsText;
+        DebugSubDisplay.text = DetailsText;
     }
 
     // Update is called once per frame
