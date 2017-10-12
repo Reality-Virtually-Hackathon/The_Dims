@@ -13,14 +13,14 @@ ARSports brings the Game to the user as opposed to the user going to the game, a
 
 This application can be further be enhanced to have a shared viewing experience with other hololens users and can also be supported by VR Devices.
 
-**ARSports is AR expereince built with Open Source Applications and Tools.**
+**ARSports is Agumented Reality Experience built with Open Source Applications and Tools.**
 
 
 ## Assets
 
-*Built on Unity 3D - 2017 1.1f1 Personal
-*Assets built using Blender 2.78 
-*Device support - Micrsoft Hololens
+* Built on Unity 3D - 2017 1.1f1 Personal
+* Assets built using Blender 2.78 
+* Device support - Micrsoft Hololens
 
 
 ## What it does?
